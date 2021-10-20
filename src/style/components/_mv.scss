@@ -1,0 +1,169 @@
+.mv {
+    position: relative;
+    background-color: #000;
+
+    &__canvas {
+        width: 100%;
+        opacity: 0;
+    }
+
+    &__title {
+        position: absolute;
+        top: get_vw(30);
+        left: get_vw(30);
+        overflow: hidden;
+        @include sp {
+            top: get_vw_sp(40);
+            left: get_vw_sp(25);
+        }
+
+        &--inner {
+            text-align: center;
+            overflow: hidden;
+        }
+
+        &--text {
+            display: inline-block;
+            transform: translate3d(0, 100%, 0);
+            letter-spacing: 5.5px;
+            font-size: get_vw(200);
+            font-family: $font-all;
+            color: $color-white;
+            @include sp {
+                font-size: get_vw_sp(50);
+            }
+        }
+    }
+    &__sub-title {
+        position: absolute;
+        top: get_vw(260);
+        left: get_vw(30);
+        overflow: hidden;
+        @include sp {
+            top: get_vw_sp(105);
+            left: get_vw_sp(25);
+        }
+
+        &--inner {
+            overflow: hidden;
+        }
+
+        &--text {
+            display: inline-block;
+            transform: translate3d(0, 100%, 0);
+            color: $color-white;
+            font-family: $font-all;
+            font-size: get_vw(60);
+            @include sp {
+                font-size: get_vw_sp(24);
+            }
+        }
+    }
+    &__key-img {
+        position: absolute;
+        bottom: get_vw(40);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: get_vw(100);
+        opacity: 0;
+        @include sp {
+            display: none;
+        }
+    }
+    &__key-text {
+        position: absolute;
+        color: $color-white;
+        text-align: center;
+        font-size: get_vw(20);
+        font-family: $font-all;
+    }
+    &__key-left {
+        left: get_vw(-55);
+        bottom: get_vw(7);
+    }
+    &__key-right {
+        right: get_vw(-72);
+        bottom: get_vw(7);
+        @include sp {
+            right: get_vw_sp(20);
+            bottom: 0;
+        }
+    }
+    &__key-bottom {
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        bottom: get_vw(-30);
+    }
+    &__key-top {
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        bottom: get_vw(75);
+    }
+    &__finger,
+    &__circle {
+        display: none;
+        @include sp {
+            display: block;
+            position: absolute;
+            z-index: 1;
+        }
+    }
+    &__finger {
+        @include sp {
+            transform: rotate(270deg);
+            right: get_vw_sp(50);
+            bottom: get_vw_sp(70);
+            width: get_vw_sp(20);
+            opacity: 0;
+        }
+    }
+    &__circle {
+        @include sp {
+            animation: animate-circle 20s linear 0s infinite;
+            right: get_vw_sp(13);
+            bottom: get_vw_sp(34);
+            width: get_vw_sp(90);
+            opacity: 0;
+        }
+    }
+    &__home,
+    &__git {
+        position: absolute;
+        left: get_vw(30);
+        overflow: hidden;
+        @include sp {
+            left: get_vw_sp(25);
+        }
+
+        &--inner {
+            text-decoration: none;
+            overflow: hidden;
+        }
+
+        &--text {
+            display: inline-block;
+            transform: translate3d(0, 100%, 0);
+            font-size: get_vw(20);
+            font-family: $font-all;
+            color: $color-white;
+            @include sp {
+                font-size: get_vw_sp(16);
+            }
+        }
+    }
+    &__home {
+        bottom: get_vw(70);
+        @include sp {
+            bottom: get_vw_sp(50);
+        }
+    }
+    &__git {
+        bottom: get_vw(30);
+        @include sp {
+            bottom: get_vw_sp(20);
+        }
+    }
+}

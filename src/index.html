@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3D Demo Key Press Animation</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="キーボードの矢印を押すと3Dオブジェクトのアニメーションを開始するデモサイトです。" />
+        <meta name="keywords" content="," />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta property="og:title" content="3D Demo Key Press Animation" />
+        <meta property="og:locale" content="ja_JP" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="3D Demo Key Press Animation" />
+        <meta property="og:image" content="https://kaito-takase.dev/3d-car/ogp.png" />
+        <meta property="og:url" content="https://kaito-takase.dev/3d-car/" />
+        <meta property="og:description" content="キーボードの矢印を押すと3Dオブジェクトのアニメーションを開始するデモサイトです。" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="3D_Demo_Key_Press_Animation_JP" />
+        <meta name="twitter:title" content="3D Demo Key Press Animation" />
+        <meta name="twitter:description" content="キーボードの矢印を押すと3Dオブジェクトのアニメーションを開始するデモサイトです。" />
+        <meta name="twitter:image" content="https://kaito-takase.dev/3d-car/ogp.png" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <section class="mv">
+                <div class="mv__canvas" data-canvas></div>
+                <div class="mv__title" data-mv="wrap-title">
+                    <h1 class="mv__title--inner">
+                        <span class="mv__title--text" data-mv="title">Toy Car</span>
+                    </h1>
+                </div>
+                <div class="mv__sub-title" data-mv="wrap-sub-title">
+                    <h2 class="mv__sub-title--inner">
+                        <span class="mv__sub-title--text" data-mv="subTitle">3</span>
+                        <span class="mv__sub-title--text" data-mv="subTitle">D</span>
+                        <span class="mv__sub-title--text" data-mv="subTitle"></span>
+                        <span class="mv__sub-title--text" data-mv="subTitle">D</span>
+                        <span class="mv__sub-title--text" data-mv="subTitle">e</span>
+                        <span class="mv__sub-title--text" data-mv="subTitle">m</span>
+                        <span class="mv__sub-title--text" data-mv="subTitle">o</span>
+                        <span class="mv__sub-title--text" data-mv="subTitle"></span>
+                        <span class="mv__sub-title--text" data-mv="subTitle">K</span>
+                        <span class="mv__sub-title--text" data-mv="subTitle">e</span>
+                        <span class="mv__sub-title--text" data-mv="subTitle">y</span>
+                        <span class="mv__sub-title--text" data-mv="subTitle"></span>
+                        <span class="mv__sub-title--text" data-mv="subTitle">P</span>
+                        <span class="mv__sub-title--text" data-mv="subTitle">r</span>
+                        <span class="mv__sub-title--text" data-mv="subTitle">e</span>
+                        <span class="mv__sub-title--text" data-mv="subTitle">s</span>
+                        <span class="mv__sub-title--text" data-mv="subTitle">s</span>
+                        <span class="mv__sub-title--text" data-mv="subTitle"></span>
+                        <span class="mv__sub-title--text pc-only" data-mv="subTitle">A</span>
+                        <span class="mv__sub-title--text pc-only" data-mv="subTitle">n</span>
+                        <span class="mv__sub-title--text pc-only" data-mv="subTitle">i</span>
+                        <span class="mv__sub-title--text pc-only" data-mv="subTitle">m</span>
+                        <span class="mv__sub-title--text pc-only" data-mv="subTitle">a</span>
+                        <span class="mv__sub-title--text pc-only" data-mv="subTitle">t</span>
+                        <span class="mv__sub-title--text pc-only" data-mv="subTitle">i</span>
+                        <span class="mv__sub-title--text pc-only" data-mv="subTitle">o</span>
+                        <span class="mv__sub-title--text pc-only" data-mv="subTitle">n</span>
+                    </h2>
+                </div>
+                <figure class="mv__key-img" data-mv="key-img">
+                    <img decoding="async" src="img/lo-res/arrow.png<%= htmlWebpackPlugin.options.cacheParam %>" srcset="img/hi-res/arrow@2x.png<%= htmlWebpackPlugin.options.cacheParam %> 2x" alt="Key" width="74" height="49" />
+                    <figcaption class="mv__key-text mv__key-left">Left</figcaption>
+                    <figcaption class="mv__key-text mv__key-right">Right</figcaption>
+                    <figcaption class="mv__key-text mv__key-bottom">Bottom</figcaption>
+                    <figcaption class="mv__key-text mv__key-top">Top</figcaption>
+                </figure>
+                <div class="mv__finger" data-mv="finger">
+                    <img src="img/lo-res/finger.png" alt="" role="none" width="256" height="256" />
+                </div>
+                <div class="mv__circle" data-mv="circle">
+                    <img src="img/lo-res/circle.png" srcset="img/hi-res/circle@2x.png 2x" alt="" role="none" width="2865" height="2865" />
+                </div>
+                <div class="mv__home" data-mv="wrap-home">
+                    <a href="/" class="mv__home--inner">
+                        <span class="mv__home--text" data-mv="home">Go Home</span>
+                    </a>
+                </div>
+                <div class="mv__git" data-mv="wrap-git">
+                    <a href="https://github.com/kaitoooo/3d-toy-car" target="_blank" rel="noopener noreferrer" class="mv__git--inner">
+                        <span class="mv__git--text" data-mv="git">Go Git</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
