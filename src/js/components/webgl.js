@@ -17,6 +17,7 @@ export default class Webgl {
             mvKeyImg: document.querySelectorAll('[data-mv="key-img"]'),
             mvHome: document.querySelector('[data-mv="home"]'),
             mvGit: document.querySelector('[data-mv="git"]'),
+            mvNote: document.querySelector('[data-mv="note"]'),
         };
         this.three = {
             scene: null,
@@ -184,14 +185,23 @@ export default class Webgl {
         tl.to(this.elms.mvHome, {
             duration: 0.2,
             y: '100%',
-        }).to(
-            this.elms.mvGit,
-            {
-                duration: 0.2,
-                y: '100%',
-            },
-            '<'
-        );
+        })
+            .to(
+                this.elms.mvGit,
+                {
+                    duration: 0.2,
+                    y: '100%',
+                },
+                '<'
+            )
+            .to(
+                this.elms.mvNote,
+                {
+                    duration: 0.2,
+                    y: '100%',
+                },
+                '<'
+            );
         tl.to(this.elms.mvKeyImg, {
             duration: 0.5,
             scale: 0.5,
@@ -219,13 +229,21 @@ export default class Webgl {
         });
         tl.to(this.elms.mvHome, {
             y: 0,
-        }).to(
-            this.elms.mvGit,
-            {
-                y: 0,
-            },
-            '<'
-        );
+        })
+            .to(
+                this.elms.mvGit,
+                {
+                    y: 0,
+                },
+                '<'
+            )
+            .to(
+                this.elms.mvNote,
+                {
+                    y: 0,
+                },
+                '<'
+            );
         tl.play();
     }
     keyDownRightHideAnim() {
@@ -250,14 +268,23 @@ export default class Webgl {
         tl.to(this.elms.mvHome, {
             duration: 0.2,
             y: '100%',
-        }).to(
-            this.elms.mvGit,
-            {
-                duration: 0.2,
-                y: '100%',
-            },
-            '<'
-        );
+        })
+            .to(
+                this.elms.mvGit,
+                {
+                    duration: 0.2,
+                    y: '100%',
+                },
+                '<'
+            )
+            .to(
+                this.elms.mvNote,
+                {
+                    duration: 0.2,
+                    y: '100%',
+                },
+                '<'
+            );
         tl.to(this.elms.mvKeyImg, {
             duration: 0.5,
             scale: 0.5,
@@ -267,14 +294,14 @@ export default class Webgl {
             duration: 0.2,
             left: '3%',
             right: 'auto',
-            top: '64%',
+            top: '62%',
             width: 'auto',
         });
         tl.to(this.elms.mvWrapSubTitle, {
             duration: 0,
             right: 'auto',
             left: '3%',
-            top: '85%',
+            top: '83%',
             textAlign: 'inherit',
         });
         tl.to(this.elms.mvTitle, {
@@ -285,13 +312,21 @@ export default class Webgl {
         });
         tl.to(this.elms.mvHome, {
             y: 0,
-        }).to(
-            this.elms.mvGit,
-            {
-                y: 0,
-            },
-            '<'
-        );
+        })
+            .to(
+                this.elms.mvGit,
+                {
+                    y: 0,
+                },
+                '<'
+            )
+            .to(
+                this.elms.mvNote,
+                {
+                    y: 0,
+                },
+                '<'
+            );
         tl.play();
     }
     keyDownTopHideAnim() {
@@ -316,14 +351,23 @@ export default class Webgl {
         tl.to(this.elms.mvHome, {
             duration: 0.2,
             y: '100%',
-        }).to(
-            this.elms.mvGit,
-            {
-                duration: 0.2,
-                y: '100%',
-            },
-            '<'
-        );
+        })
+            .to(
+                this.elms.mvGit,
+                {
+                    duration: 0.2,
+                    y: '100%',
+                },
+                '<'
+            )
+            .to(
+                this.elms.mvNote,
+                {
+                    duration: 0.2,
+                    y: '100%',
+                },
+                '<'
+            );
         tl.to(this.elms.mvKeyImg, {
             duration: 0.5,
             scale: 0.5,
@@ -350,13 +394,21 @@ export default class Webgl {
         });
         tl.to(this.elms.mvHome, {
             y: 0,
-        }).to(
-            this.elms.mvGit,
-            {
-                y: 0,
-            },
-            '<'
-        );
+        })
+            .to(
+                this.elms.mvGit,
+                {
+                    y: 0,
+                },
+                '<'
+            )
+            .to(
+                this.elms.mvNote,
+                {
+                    y: 0,
+                },
+                '<'
+            );
         tl.play();
     }
     keyDownBottomHideAnim() {
@@ -381,14 +433,23 @@ export default class Webgl {
         tl.to(this.elms.mvHome, {
             duration: 0.2,
             y: '100%',
-        }).to(
-            this.elms.mvGit,
-            {
-                duration: 0.2,
-                y: '100%',
-            },
-            '<'
-        );
+        })
+            .to(
+                this.elms.mvGit,
+                {
+                    duration: 0.2,
+                    y: '100%',
+                },
+                '<'
+            )
+            .to(
+                this.elms.mvNote,
+                {
+                    duration: 0.2,
+                    y: '100%',
+                },
+                '<'
+            );
         tl.to(this.elms.mvKeyImg, {
             duration: 0.5,
             scale: 0.5,
@@ -415,13 +476,21 @@ export default class Webgl {
         });
         tl.to(this.elms.mvHome, {
             y: 0,
-        }).to(
-            this.elms.mvGit,
-            {
-                y: 0,
-            },
-            '<'
-        );
+        })
+            .to(
+                this.elms.mvGit,
+                {
+                    y: 0,
+                },
+                '<'
+            )
+            .to(
+                this.elms.mvNote,
+                {
+                    y: 0,
+                },
+                '<'
+            );
         tl.play();
     }
     handleEvents() {

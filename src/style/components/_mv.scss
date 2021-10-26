@@ -130,7 +130,8 @@
         }
     }
     &__home,
-    &__git {
+    &__git,
+    &__note {
         position: absolute;
         left: get_vw(30);
         overflow: hidden;
@@ -155,12 +156,18 @@
         }
     }
     &__home {
-        bottom: get_vw(70);
+        bottom: get_vw(90);
+        @include sp {
+            bottom: get_vw_sp(80);
+        }
+    }
+    &__git {
+        bottom: get_vw(60);
         @include sp {
             bottom: get_vw_sp(50);
         }
     }
-    &__git {
+    &__note {
         bottom: get_vw(30);
         @include sp {
             bottom: get_vw_sp(20);

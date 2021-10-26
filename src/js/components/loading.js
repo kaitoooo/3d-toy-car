@@ -8,6 +8,7 @@ export default class Loading {
             mvSubTitle: document.querySelectorAll('[data-mv="subTitle"]'),
             mvHome: document.querySelector('[data-mv="home"]'),
             mvGit: document.querySelector('[data-mv="git"]'),
+            mvNote: document.querySelector('[data-mv="note"]'),
             mvKeyImg: document.querySelectorAll('[data-mv="key-img"]'),
             mvFinger: document.querySelector('[data-mv="finger"]'),
             mvCircle: document.querySelector('[data-mv="circle"]'),
@@ -64,6 +65,13 @@ export default class Loading {
             )
             .to(
                 this.elms.mvGit,
+                {
+                    y: 0,
+                },
+                '<'
+            )
+            .to(
+                this.elms.mvNote,
                 {
                     y: 0,
                 },
